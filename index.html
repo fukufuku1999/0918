@@ -144,7 +144,9 @@
 		
 		  </div>
 				
-			
+		<audio id="se" preload="auto">
+ 		<source src="camera1.mp3" type="audio/mp3">
+		</audio>	
 				
 		<script>
 		window.onload = () => {
@@ -186,6 +188,7 @@
 		
 			// 演出的な目的で一度映像を止めてSEを再生する
 		  video.pause();  // 映像を停止
+		  se.play();      // シャッター音			    
 		  setTimeout( () => {
 		  video.play();    // 0.5秒後にカメラ再開
 		  }, 500);
